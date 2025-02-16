@@ -1,7 +1,7 @@
 {
-  "name": "postcss-jit-props",
-  "version": "1.0.15",
-  "description": "PostCSS plugin to insert variables from a data source based on discovered usage",
+  "name": "elrh-postcss-jit-props",
+  "version": "1.0.0",
+  "description": "PostCSS plugin to insert variables from a data source based on discovered usage + empty css file fix",
   "keywords": [
     "postcss",
     "css",
@@ -15,11 +15,11 @@
     "dev": "jest --coverage --watch",
     "lint": "eslint ."
   },
-  "author": "Adam Argyle <argyle@google.com>",
+  "author": "Alois Seckar <alois.seckar@gmail.com>",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GoogleChromeLabs/postcss-jit-props.git"
+    "url": "git+https://github.com/AloisSeckar/elrh-postcss-jit-props.git"
   },
   "engines": {
     "node": ">=10.0.0"
