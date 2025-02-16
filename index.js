@@ -41,7 +41,7 @@ module.exports = (options) => {
   const FilePropsCache = new Map();
 
   return {
-    postcssPlugin: 'postcss-jit-props',
+    postcssPlugin: 'elrh-postcss-jit-props',
     prepare() {
       const UserProps = { ...props }
 
@@ -64,7 +64,7 @@ module.exports = (options) => {
           let target_selector_dark = custom_selector_dark || custom_selector || ':root'
 
           if (!files && !Object.keys(props).length) {
-            return console.warn('postcss-jit-props: Variable source(s) not passed.')
+            return console.warn('elrh-postcss-jit-props: Variable source(s) not passed.')
           }
 
           if (files?.length) {
@@ -76,7 +76,7 @@ module.exports = (options) => {
             globs.map(file => {
               result.messages.push({
                 type: 'dependency',
-                plugin: 'postcss-jit-props',
+                plugin: 'elrh-postcss-jit-props',
                 file: file,
                 parent: node.source?.input?.file,
               });

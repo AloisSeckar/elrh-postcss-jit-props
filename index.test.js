@@ -392,7 +392,7 @@ it('Can fail without srcProps options gracefully', async () => {
   console.warn = jest.fn()
   await postcss([plugin({})]).process(``, { from: undefined })
 
-  expect(console.warn).toHaveBeenCalledWith('postcss-jit-props: Variable source(s) not passed.')
+  expect(console.warn).toHaveBeenCalledWith('elrh-postcss-jit-props: Variable source(s) not passed.')
 })
 
 it('Can jit props to a custom selector', async () => {
